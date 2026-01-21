@@ -318,11 +318,6 @@ sample of ten extracted obligation candidates…
 3. Each item is labeled as:
    - `true` (valid obligation), or
    - `false` (non-obligation, e.g., definition or applicability rule).
-4. Precision is computed as:
-
-`precision = (number of true obligations) / 10`
-
-
 
 **Evaluation artifacts:**
 
