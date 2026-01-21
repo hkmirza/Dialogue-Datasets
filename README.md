@@ -165,8 +165,9 @@ Run the following commands from the repository root in order:
 1. Retrieve legal texts from EUR-Lex
 
 Downloads the three document versions as HTML and stores metadata.
+```bash
 - python code/01_retrieve.py
-
+```
 Outputs: 
 data/texts/raw_html/
   ├── v1_base.html
@@ -177,8 +178,9 @@ data/texts/raw_html/
 2. Extract and normalize legal text
 
 Extracts the main legal text from HTML and saves it as clean TXT files.
+```bash
 - python code/02_extract_text.py
-
+```
 Outputs:
 data/texts/raw_txt/
   ├── v1_base.txt
@@ -188,8 +190,9 @@ data/texts/raw_txt/
 3. Create structured paragraph units
 
 Splits each document into paragraph units and assigns stable identifiers.
+```bash
 - python code/03_make_units.py
-
+```
 Outputs:
 data/texts/units/
   ├── v1_base.jsonl
@@ -210,8 +213,9 @@ Verifies that:
 there are no duplicate unit IDs,
 units are generated correctly,
 sample previews are printed for inspection.
-
+```bash
 - python code/04_sanity_check.py
+```
 Execution stops with an error if any duplicate identifiers are detected.
 
 
