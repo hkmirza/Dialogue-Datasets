@@ -147,14 +147,17 @@ python -m venv .venv
 
 ### Activate a virtual environment
  - Windows (PowerShell)
+```bash
  - .venv\Scripts\Activate.ps1
-
+```
 - macOS / Linux
+```bash
 - source .venv/bin/activate
-
+```
 ### Install dependencies
+```bash
 - pip install -r requirements.txt
-
+```
 ### How to Reproduce Task A (End-to-End)
 
 Run the following commands from the repository root in order:
